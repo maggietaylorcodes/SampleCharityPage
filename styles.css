@@ -1,0 +1,89 @@
+body {
+  background-color: #4c4c4c!important;
+}
+/*added code below to remove the hyperlinks caused by bootstrap*/
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+/*Had to do the code above to get the color behind carousel changed*/
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.jumbotron {
+  background-color: #008B8B!important;
+  margin-bottom: 0!important;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+  background-color: #ffba08;
+}
+.container-fluid {
+  padding: 3% 3%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+.feature-box {
+  padding: 4%;
+  text-align: center;
+}
+.icon {
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ac4b1c;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+.card-body *:hover {
+  color: black;
+  text-decoration: none !important;
+}
